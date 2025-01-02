@@ -1,0 +1,220 @@
+body {
+    font-family: Roboto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #383838;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: roboto;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+#particles-js {
+    position: fixed;
+    width: 200%;
+    height: 100%;
+    top: 50;
+    left: 0;
+    z-index: 1;
+}
+
+ /* Ensure content is above particles */
+ body > * {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    border-radius: 15px;
+}
+
+.typing-effect {
+    background: linear-gradient(90deg, #ff0000, #ff9900, #e5ff00, #00ff0d, #00ffea, #1100ff, #c300ff);
+    background-size: 200% auto;
+    filter: contrast(150%) drop-shadow(0px 0px 10px rgba(105, 172, 216, 0.27));
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: mnrswtext 2s infinite linear;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 13.6% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff; }
+}
+
+.appear-effect {
+    color: #ffffff;
+    font-size: 1.2em;
+    opacity: 0;
+    
+    animation: appear 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appear-effect a {
+    white-space: nowrap;
+    background: linear-gradient(90deg, #00fff0, #76fcbb, #69d8c0);
+    background-size: 200% auto;
+    filter: contrast(150%) drop-shadow(0px 0px 10px rgba(105, 172, 216, 0.27));
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: mnrswtext 2s infinite linear;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.appear-effect a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.appear-effect-name1 {
+    color: #ffffff;
+    font-size: 1.2em;
+    opacity: 0;
+    
+    animation: appear 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appear-effect-name1 a {
+    white-space: nowrap;
+    background: linear-gradient(90deg, #a483f1, #69acd8, #69d8c0, #69acd8, #a483f1);
+    background-size: 200% auto;
+    filter: contrast(150%) drop-shadow(0px 0px 10px rgba(105, 172, 216, 0.27));
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: mnrswtext 2s infinite linear;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.appear-effect-name2 {
+    color: #ffffff;
+    font-size: 1.2em;
+    opacity: 0;
+    
+    animation: appear 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appear-effect-name2 a {
+    white-space: nowrap;
+    background: linear-gradient(90deg, #008000, #228B22, #32CD32, #008000);
+    background-size: 200% auto;
+    filter: contrast(150%) drop-shadow(0px 0px 10px rgba(105, 172, 216, 0.27));
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: mnrswtext 2s infinite linear;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+@keyframes glow {
+0% {
+filter: drop-shadow(0 0 5px #00ffff); /* Change the shadow color to cyan (#00ffff) */
+}
+100% {
+filter: drop-shadow(0 0 5px #ee82ee); /* Change the shadow color to violet (#ee82ee) */
+}
+}
+
+@keyframes mnrswtext {
+from {
+background-position: 0% 50%;
+}
+
+to {
+background-position: 200% 50%;
+}
+}
+

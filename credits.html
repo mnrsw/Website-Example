@@ -1,0 +1,59 @@
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_credits.css">
+    
+    <title>Website Example</title>
+<body>
+<div id="particles-js"></div>
+<h1 class="typing-effect">Credits</h1>
+<p class="appear-effect-name2">I love this guy <a href="#">Redirect</a></p>
+<p class="appear-effect-name1">this too - <a href="#">Redirect 1</a></p>
+<p class="appear-effect">best dev ever - <a href="https://github.com/mnrsw">mnrsw</a>
+
+
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 100, density: { enable: true, value_area: 1900 } },
+            color: { value: "#ffffff" },
+            shape: { 
+                type: "star", // Change the shape type to "star"
+                stroke: {
+                    width: 0,
+                    color: "#000000"
+                },
+                polygon: {
+                    nb_sides: 5 // Number of sides for the star shape
+                }
+            },
+            opacity: { value: 0.5, random: false },
+            size: { value: 5, random: true },
+            line_linked: { enable: false },
+            move: {
+                enable: true,
+                speed: 1,
+                direction: "random",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: true,
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: false },
+                onclick: { enable: false },
+                resize: true
+            }
+        },
+        retina_detect: true
+    });
+</script>
